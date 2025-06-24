@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huijie Sun - Mezzo-soprano</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Exo+2:wght@300;400;600;700&family=Noto+Serif+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <!-- Particle background container -->
+    <canvas id="particle-canvas"></canvas>
+    
+    <!-- Navigation bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-music"></i>
+            <span class="logo-text">Huijie <span class="highlight">Sun</span></span>
+        </div>
+        <ul class="nav-links">
+            <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link">Biography</a></li>
+            <li class="nav-item"><a href="#portfolio" class="nav-link">Gallery</a></li>
+            <li class="nav-item"><a href="#videos" class="nav-link">Performances</a></li>
+            <li class="nav-item"><a href="#schedule" class="nav-link">Schedule</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Main content area -->
+    <div class="container">
+        <!-- Home section -->
+        <section id="home" class="section active">
+            <div class="hero">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        <span class="title-part">Huijie</span>
+                        <span class="title-part">Sun</span>
+                        <span class="title-part">Mezzo-soprano</span>
+                    </h1>
+                    <p class="hero-subtitle">An Inner Mongolian mezzo-soprano captivating audiences across opera stages in the United States with her profound musicality and distinctive stage presence.</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary">Explore Performances <i class="fas fa-arrow-right"></i></button>
+                        <button class="btn btn-outline">Learn More</button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="floating-box">
+                        <div class="box-face front"></div>
+                        <div class="box-face back"></div>
+                        <div class="box-face left"></div>
+                        <div class="box-face right"></div>
+                        <div class="box-face top"></div>
+                        <div class="box-face bottom"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Biography section -->
+        <section id="about" class="section">
+            <h2 class="section-title">Biography</h2>
+            <p class="section-subtitle">Inner Mongolian Operatic Mezzo-soprano</p>
+            
+            <div class="about-container">
+                <div class="about-content">
+                    <p class="about-text">Huijie Sun is a mezzo-soprano originally from Hohhot, the capital city of Inner Mongolia Autonomous Region, China. She has captivated audiences with her performances across various opera stages in the United States.</p>
+                    
+                    <p class="about-text">Sun made her role debut as Lady Murasaki in <em>Murasaki's Moon</em> with Hub City Opera and Dance in New Jersey and has also taken on role as Prince Orlovsky in <em>Die Fledermaus</em> at Peabody Opera in Baltimore (2024). Her versatile repertoire spans from the classic works of Mozart to contemporary compositions, showcasing her ability to bring both depth and nuance to her characters.</p>
+                    
+                    <p class="about-text">Huijie received her Graduate Performance Diploma at Peabody Institute of Johns Hopkins University under acclaimed mezzo-sopranos Denyce Graves and Margaret Baroody. She earned her previous degree from Austin Peay State University. Huijie has also studied with esteemed teachers Richard Leech, Issachah Savage, Elizabeth Futral, Alexander LoBianco, Peter Scott Drackley, Gail Robinson Oturu, and Sharon Mabry.</p>
+                    
+                    <div class="stats-container">
+                        <div class="stat-item">
+                            <div class="stat-value">8+</div>
+                            <div class="stat-label">Opera Roles</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">20+</div>
+                            <div class="stat-label">Concert Performances</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">10+</div>
+                            <div class="stat-label">Festival Appearances</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">5+</div>
+                            <div class="stat-label">Masterclasses</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image">
+                    <div class="hexagon">
+                        <div class="hex-top"></div>
+                        <div class="hex-bottom"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gallery-preview">
+                <div class="gallery-slides">
+                    <div class="slide active" style="background-image: url('img/slide_1.jpg');">
+                        <div class="slide-content">
+                            <h2>Artistic Journey</h2>
+                            <p>Huijie Sun's musical journey began in Inner Mongolia and has taken her to prestigious stages across the United States, where she continues to develop her artistry and expand her repertoire.</p>
+                            <button class="btn btn-outline view-detail" data-detail="journey">View Details</button>
+                        </div>
+                    </div>
+                    <div class="slide" style="background-image: url('img/slide_2.jpg');">
+                        <div class="slide-content">
+                            <h2>Role Performances</h2>
+                            <p>Sun debuted as Lady Murasaki in <em>Murasaki's Moon</em> with Hub City Opera and Dance in New Jersey and portrayed Prince Orlovsky in <em>Die Fledermaus</em> at Peabody Opera in Baltimore (2024).</p>
+                            <button class="btn btn-outline view-detail" data-detail="roles">View Details</button>
+                        </div>
+                    </div>
+                    <div class="slide" style="background-image: url('img/opera.jpg');">
+                        <div class="slide-content">
+                            <h2>Educational Background</h2>
+                            <p>Huijie earned her Graduate Performance Diploma at Johns Hopkins University's Peabody Institute, studying under renowned mezzo-sopranos Denyce Graves and Margaret Baroody.</p>
+                            <button class="btn btn-outline view-detail" data-detail="education">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Gallery section -->
+        <section id="portfolio" class="section">
+            <h2 class="section-title">Gallery</h2>
+            <p class="section-subtitle">Explore collections of performance and portrait photography</p>
+            
+            <div class="gallery-container">
+                <div class="gallery-item" data-index="1" data-category="portraits">
+                    <div class="gallery-card">
+                        <div class="card-front" style="background-image: url('img/floralpro-1.JPG');">
+                            <div class="card-overlay">
+                                <h3>Portrait Collection</h3>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h3>Portrait Collection</h3>
+                            <p>A series of professional portraits showcasing Huijie's artistic persona. These images capture her elegance and expressiveness, essential qualities that define her presence both on and off stage.</p>
+                            <button class="btn btn-outline view-gallery" data-gallery="portraits">View Gallery</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-index="2" data-category="opera">
+                    <div class="gallery-card">
+                        <div class="card-front" style="background-image: url('img/Lady Murasaki-1.jpg');">
+                            <div class="card-overlay">
+                                <h3>Opera Performances</h3>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h3>Opera Performances</h3>
+                            <p>Photographs from Huijie's notable opera roles, including her portrayal of Lady Murasaki in <em>Murasaki's Moon</em> at Hub City Opera and Dance, showcasing her dramatic range and stage presence.</p>
+                            <button class="btn btn-outline view-gallery" data-gallery="opera">View Gallery</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-index="3" data-category="concerts">
+                    <div class="gallery-card">
+                        <div class="card-front" style="background-image: url('img/as Prince-1.jpg');">
+                            <div class="card-overlay">
+                                <h3>Concert Highlights</h3>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h3>Concert Highlights</h3>
+                            <p>Images from recitals and concert performances, including her role as Prince Orlovsky in <em>Die Fledermaus</em> at Peabody Opera in Baltimore, demonstrating her versatility across different performance contexts.</p>
+                            <button class="btn btn-outline view-gallery" data-gallery="concerts">View Gallery</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Performances section -->
+        <section id="videos" class="section">
+            <h2 class="section-title">Performances</h2>
+            <p class="section-subtitle">Selected recordings showcasing vocal artistry</p>
+            
+            <div class="video-container">
+                <div class="video-card" data-video="1">
+                    <div class="video-thumb">
+                        <img src="img/conecrt hall.jpg" alt="Concert Performance">
+                        <div class="play-btn"><i class="fas fa-play"></i></div>
+                    </div>
+                    <div class="video-info">
+                        <h3 class="video-title">Parto, parto - Mozart</h3>
+                        <p class="video-desc">From Mozart's opera <em>La Clemenza di Tito</em>, this aria showcases the mezzo-soprano's technical agility and expressive capabilities.</p>
+                        <div class="video-meta">
+                            <span><i class="far fa-clock"></i> 5:45</span>
+                            <span><i class="far fa-eye"></i> 28K</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="video-card" data-video="2">
+                    <div class="video-thumb">
+                        <img src="img/opera.jpg" alt="Opera Performance">
+                        <div class="play-btn"><i class="fas fa-play"></i></div>
+                    </div>
+                    <div class="video-info">
+                        <h3 class="video-title">Che farò senza Euridice - Gluck</h3>
+                        <p class="video-desc">This poignant aria from Gluck's <em>Orfeo ed Euridice</em> demonstrates Huijie's emotional depth and refined vocal technique.</p>
+                        <div class="video-meta">
+                            <span><i class="far fa-clock"></i> 4:32</span>
+                            <span><i class="far fa-eye"></i> 18K</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="video-card" data-video="3">
+                    <div class="video-thumb">
+                        <img src="img/1_withred_2.jpg" alt="Solo Recital">
+                        <div class="play-btn"><i class="fas fa-play"></i></div>
+                    </div>
+                    <div class="video-info">
+                        <h3 class="video-title">Habanera - Bizet</h3>
+                        <p class="video-desc">The iconic aria from Bizet's <em>Carmen</em>, showcasing Huijie's commanding stage presence and rich vocal color.</p>
+                        <div class="video-meta">
+                            <span><i class="far fa-clock"></i> 6:15</span>
+                            <span><i class="far fa-eye"></i> 32K</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Schedule section -->
+        <section id="schedule" class="section">
+            <h2 class="section-title">Performance Schedule</h2>
+            <p class="section-subtitle">Upcoming engagements and appearances</p>
+            
+            <div class="timeline-container">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">
+                            <span class="date-month">APR</span>
+                            <span class="date-day">26</span>
+                            <span class="date-year">2025</span>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>27 by Ricky Ian Gordon</h3>
+                            <p class="role">as Gertrude Stein</p>
+                            <p class="venue">Harris Theatre, Fairfax, VA</p>
+                            <p class="time">Saturday, 2:00 PM EST</p>
+                            <a href="https://issuu.com/cvpa/docs/spring_2025_opera_27_20_?fr=sYWRlYzg0MDg1NDU" target="_blank" class="btn btn-outline btn-sm">Program Details</a>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">
+                            <span class="date-month">APR</span>
+                            <span class="date-day">27</span>
+                            <span class="date-year">2025</span>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>27 by Ricky Ian Gordon</h3>
+                            <p class="role">as Gertrude Stein</p>
+                            <p class="venue">Harris Theatre, Fairfax, VA</p>
+                            <p class="time">Sunday, 3:00 PM EST</p>
+                            <a href="https://issuu.com/cvpa/docs/spring_2025_opera_27_20_?fr=sYWRlYzg0MDg1NDU" target="_blank" class="btn btn-outline btn-sm">Program Details</a>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">
+                            <span class="date-month">JUN</span>
+                            <span class="date-day">15</span>
+                            <span class="date-year">2025</span>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Summer Recital Series</h3>
+                            <p class="role">Solo Recital</p>
+                            <p class="venue">Peabody Institute, Baltimore, MD</p>
+                            <p class="time">Sunday, 7:30 PM EST</p>
+                            <a href="#" class="btn btn-outline btn-sm">Coming Soon</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact section -->
+        <section id="contact" class="section">
+            <h2 class="section-title">Contact</h2>
+            <p class="section-subtitle">For bookings, collaborations, and inquiries</p>
+            
+            <div class="about-container">
+                <div class="about-content" style="flex: 2;">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+                
+                <div class="about-content" style="flex: 1;">
+                    <div class="contact-info" style="margin-top: 0;">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <p>huijiemezzo@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                            <div class="contact-details">
+                                <p><a href="https://www.youtube.com/@huijiesunmezzo" target="_blank">YouTube Channel</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                            <div class="contact-details">
+                                <p><a href="https://www.instagram.com/huijie.sun.mezzo/" target="_blank">Instagram Profile</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 class="footer-title">Huijie Sun</h3>
+                <p style="color: rgba(255, 255, 255, 0.8); margin-bottom: 20px; max-width: 300px;">Mezzo-soprano dedicated to conveying emotion through music, transcending cultural boundaries.</p>
+                <div class="social-links">
+                    <a href="https://www.youtube.com/@huijiesunmezzo" class="social-link" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/huijie.sun.mezzo/" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3 class="footer-title">Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="#about"><i class="fas fa-chevron-right"></i> Biography</a></li>
+                    <li><a href="#portfolio"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+                    <li><a href="#videos"><i class="fas fa-chevron-right"></i> Performances</a></li>
+                    <li><a href="#schedule"><i class="fas fa-chevron-right"></i> Schedule</a></li>
+                    <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3 class="footer-title">Booking</h3>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <p>huijiemezzo@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Huijie Sun | Mezzo-soprano | All Rights Reserved</p>
+        </div>
+    </footer>
+    
+    <!-- Back to top button -->
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    
+    <!-- Gallery modal -->
+    <div class="modal-overlay" id="image-modal-overlay">
+        <div class="gallery-modal">
+            <div class="gallery-modal-content">
+                <div class="gallery-main-image">
+                    <img id="modal-image" src="" alt="Featured image">
+                    <div class="modal-nav prev-btn"><i class="fas fa-chevron-left"></i></div>
+                    <div class="modal-nav next-btn"><i class="fas fa-chevron-right"></i></div>
+                </div>
+                <div class="gallery-thumbnails" id="gallery-thumbnails">
+                    <!-- Thumbnails will be inserted here by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Video modal -->
+    <div class="modal-overlay" id="video-modal-overlay">
+        <div class="video-modal">
+            <iframe id="modal-video" frameborder="0" allowfullscreen></iframe>
+            <div class="video-close"><i class="fas fa-times"></i> Close Video</div>
+        </div>
+    </div>
+    
+    <!-- 详细信息弹窗 -->
+    <div class="modal-overlay" id="detail-modal-overlay">
+        <div class="detail-modal">
+            <div class="detail-modal-header">
+                <h3 id="detail-title">Detailed Information</h3>
+                <div class="modal-close"><i class="fas fa-times"></i></div>
+            </div>
+            <div class="detail-modal-content" id="detail-content">
+                <!-- 详细内容将通过JavaScript动态插入 -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
